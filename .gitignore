@@ -1,7 +1,7 @@
 # Node.js
 node_modules/
-*/israel-public-transportation_extracted/
-*/israel-public-transportation.zip
+israel-public-transportation_extracted/
+israel-public-transportation.zip
 
 # macOS
 .DS_Store
@@ -27,9 +27,6 @@ logs
 # Output files
 build/
 dist/
-*.js
-*.jsx
-*.ts
 *.tsx
 
 # Environment variables
