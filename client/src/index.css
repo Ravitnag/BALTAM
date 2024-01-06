@@ -1,8 +1,16 @@
+@import './common.css';
+
+@font-face {
+  font-family: 'Almoni';
+  src: url('./fonts/almoni-dl-aaa-300.ttf') format('truetype');
+  /* Add more src entries for different font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Almoni';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
@@ -11,4 +19,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  font-family: 'Almoni';
+  width: 300px;
+}
+textarea {
+  font-family: 'Almoni';
+  font-size: 18px;
+  width: 300px;
+  height: 100px;
+}
+textarea:placeholder-shown { 
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 28px;
+ 
+}
+
+select {
+  font-family: 'Almoni';
+  font-weight: bolder;
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+}
+ option {
+  font-weight: bolder;
+  margin: 10px;
+  min-height: 5em !important;
+  height: 40px;
+  padding:5px 0;
+}
+
+.btn {
+  font-family: 'Almoni';
+  font-size: 24px;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  background-color: var(--side-menu-color);
+}
+
+.center {
+  align-items: center;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: var(--navbar-color);
+  color: #fff;
+}
+
+.mg-10 {
+  margin: 10px;
+}
+
+.mg-40 {
+  margin: 40px;
 }

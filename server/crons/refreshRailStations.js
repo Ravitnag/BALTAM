@@ -16,7 +16,8 @@ const refreshRailStations = async (allRailStations) => {
         let lines = await accessStopsFile('./israel-public-transportation_extracted')
         let arrayOfStops = await convertCsvToJson(lines)
         console.log('done')
-        allRailStations.data = arrayOfStops;
+        allRailStations.data = arrayOfStops.map(stop=>({value: stop.stop_code, label: stop.stop_name})).
+        sort((a,b)=> a.label.localeCompare(b.label))
     }
     catch (err) {
         console.log(err.stack);

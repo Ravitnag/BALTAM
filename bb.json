@@ -1,0 +1,121 @@
+{
+    "key": "4e264408-13cc-4693-aeaa-e53fc91aff8f",
+    "dateTime": "2023-10-11T15:05:45.4552956Z",
+    "changes": [
+      {
+        "_event": "NEW_TICKET",
+        "ticketId": 60278269,
+        "ticket": {
+          "id": 60278269,
+          "departmentId": "4e264408-13cc-4693-aeaa-e53fc91aff8f",
+          "field1": "",
+          "field2": "",
+          "field3": "",
+          "field4": "",
+          "field5": "",
+          "field6": "",
+          "field7": "",
+          "field8": "",
+          "field9": "",
+          "field10": "",
+          "culture": "he-IL",
+          "ticketType": "GlassixBot",
+          "tags": [],
+          "owner": {
+            "id": "098cf515-2c5e-4e7a-9c7a-4b350474c638",
+            "gender": "Male",
+            "UserName": "4e264408-13cc-4693-aeaa-e53fc91aff8f@glassix.bot",
+            "culture": "en-US",
+            "isAnonymous": false,
+            "uniqueArgument": "",
+            "type": "BOT"
+          },
+          "state": "Open",
+          "open": "2023-10-11T15:05:44.2504147Z",
+          "close": "0001-01-01T00:00:00",
+          "lastActivity": "2023-10-11T15:05:44.2504147Z",
+          "uniqueArgument": "",
+          "details": {
+            "userAgent": "",
+            "iPAddress": "",
+            "location": "",
+            "cardsPath": "",
+            "source": {
+              "title": "מנורה מבטחים משאבי אנוש",
+              "uri": "http://wa.me/972547107130"
+            },
+            "isMobile": false,
+            "referral": {
+              "adId": "",
+              "adTitle": "",
+              "refData": "",
+              "productId": "",
+              "fbPostId": "",
+              "instagramStoryId": "",
+              "appleIntentId": "",
+              "appleGroupId": "",
+              "twitterRootTweetId": "",
+              "whatsappHeadline": "",
+              "whatsappBody": "",
+              "whatsappSourceType": "",
+              "whatsappSourceId": ""
+            }
+          },
+          "primaryProtocolType": "WhatsApp",
+          "movedToTicketId": 0,
+          "movedToDepartmentId": "00000000-0000-0000-0000-000000000000",
+          "movedFromTicketId": 0,
+          "movedFromDepartmentId": "00000000-0000-0000-0000-000000000000",
+          "queueTimeGross": "00:00:00",
+          "queueTimeNet": "00:00:00",
+          "firstAgentResponseTimeGross": "00:00:00",
+          "firstAgentResponseTimeNet": "00:00:00",
+          "agentMediaCount": 0,
+          "customerMediaCount": 0,
+          "agentMessagesCount": 0,
+          "customerMessagesCount": 0,
+          "durationNet": "00:00:00",
+          "durationGross": "00:00:00",
+          "agentResponseAverageTimeNet": "00:00:00",
+          "agentCannedRepliesCount": 0,
+          "botConversationId": "6c7fc549-5e5d-417b-a3b3-4ea922fa0017",
+          "botConversations": [
+            "6c7fc549-5e5d-417b-a3b3-4ea922fa0017"
+          ],
+          "isIncoming": true,
+          "isScrambled": false,
+          "participants": [
+            {
+              "id": 1,
+              "name": "רוית",
+              "type": "Client",
+              "identifier": "972544882463",
+              "departmentIdentifier": "972547107130",
+              "displayName": "",
+              "protocolType": "WhatsApp",
+              "subProtocolType": "Undefined",
+              "isActive": true,
+              "isDeleted": false,
+              "contactId": "8a178e88-2759-4ea3-a3a9-1722b417af47",
+              "userName": ""
+            },
+            {
+              "id": 2,
+              "name": "בוט",
+              "type": "User",
+              "identifier": "098cf515-2c5e-4e7a-9c7a-4b350474c638",
+              "departmentIdentifier": "",
+              "displayName": "בוט",
+              "protocolType": "Web",
+              "subProtocolType": "Undefined",
+              "isActive": true,
+              "isDeleted": false,
+              "contactId": "00000000-0000-0000-0000-000000000000",
+              "userName": "4e264408-13cc-4693-aeaa-e53fc91aff8f@glassix.bot"
+            }
+          ],
+          "botConversationSteps": []
+        }
+      }
+    ]
+  }

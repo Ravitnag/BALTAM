@@ -1,34 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import NewUpdate from './NewUpdate';
+
+import Menu from './Menu'
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
 
-  const [isAddUpdateClicked, setIsAddUpdateClicked] = useState(false)
 
-
-  const handleAddUpdateClick = () => {
-
-    setIsAddUpdateClicked(true)
-   
-   }
 
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1> בלתם</h1>
-        <div>
-         בשביל שלא תתבאס כשתגיע
-        </div>
+  
 
-        <button onClick={()=>handleAddUpdateClick()}>להוספת עדכון + </button>
-      {
-        isAddUpdateClicked ? <NewUpdate/> : null
-      }
-      </header>
+        <div id="main" className='main'>
+        <nav>
+        <div className='sign-in'>
+          <span className='sign-in-span'>
+            להתחברות \ הרשמה
+          </span>
+        </div>
+      </nav>
+          <Menu />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <Outlet />
+        </div>
+     
+  
+
+
+
+      <footer id="footer">
+        <div>
+          כל הזכויות שמורות לרוית
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react"
 import TransportationRail from "./TransportationRail"
+import './css/NewUpdate.css'
+import Select from 'react-select';
+import selectStyle from './selectStyling'
 
 const typesOfUpdate = [
     { label: "תחבורה - רכבת", value: "transportaionRail" },
@@ -20,25 +23,47 @@ const NewUpdate = () => {
         img: ""
     })
 
-    useEffect(() => {
-        console.log(update);
-    }, [update])
+
+
+
 
 
     return (
-        <div>
+        <div className="container-form">
 
-            <form>
-                <select value={update.type} placeholder="סוג העדכון" onChange={(event) => setUpdate({ ...update, type: event.target.value })}>
-                    {typesOfUpdate.map((updateType) => (
-                        <option value={updateType.value}>{updateType.label}</option>
-                    ))}
-                </select>
+            <form className="form">
+                <div className="mg-10">
+                    {/* <select value={update.type} placeholder="סוג העדכון" onChange={(event) => setUpdate({ ...update, type: event.target.value })}>
+                        {typesOfUpdate.map((updateType) => (
+                            <option value={updateType.value}>{updateType.label}</option>
+                        ))}
+                    </select> */}
 
-                {update.type === "transportaionRail" ?
-                    <TransportationRail /> : null}
+                    <Select options={typesOfUpdate} placeholder='סוג בלת"מ' onChange={(value)=>setUpdate((perv)=>({...perv, type: value.value}))}
+                     styles={selectStyle} />
+                </div>
+
+    
+
+                <div className="mg-10">
+                    {update.type === "transportaionRail" ?
+                        <TransportationRail /> : null}
+                </div>
+
+                <div className="mg-10"> 
+                    <textarea placeholder='תיאור בלת"מ' />
+                </div>
+
+
+
 
             </form>
+
+            <div>
+                  <button className="btn mg-10">לעדכון</button>
+            </div>
+
+          
 
         </div>
     )

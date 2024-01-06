@@ -1,0 +1,29 @@
+@import './common.css';
+.one-baltam-bar {
+    width: 300px;
+    height: 25px;
+    background-color: var(--bright-color);
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.like-icon {
+    vertical-align: middle;
+    color: white;
+    cursor: pointer;
+}
+
+.like-icon:hover {
+    vertical-align: middle;
+    transition: color .5s;
+    transition: font-size .5s;
+    font-size: 20px;
+    color: red;
+    
+}
+
+.likes {
+margin: auto; 
+}

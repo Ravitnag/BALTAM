@@ -1,0 +1,25 @@
+@import '../common.css';
+
+.bcg {
+  
+        /* background-image: url('../img/well-dressed-executives-movement.jpg'); */
+        /* background-image: url('../img/black-woman-using-mobile-phone-london-underground2.jpg');
+        background-size: auto 155vh;
+        background-repeat: no-repeat;
+        background-color: var(--bcg-color);
+        background-attachment: fixed; */
+        color: white;
+        min-height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+}
+
+.baltam-header {
+    color: black;
+    background-color: var(--bcg-color);
+    display: inline-block;
+    width: fit-content;
+    padding: 10px;
+}

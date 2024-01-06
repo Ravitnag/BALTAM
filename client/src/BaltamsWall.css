@@ -1,0 +1,14 @@
+@import './common.css';
+
+.container-baltams-wall {
+    display: flex;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.bcg-wall {
+    padding-top: 20px;
+    background-color: var(--navbar-color)
+}
